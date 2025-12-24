@@ -21,14 +21,10 @@ public class Device {
     }
 
     public String status() {
-        return name + ": " + (on ? "on" : "off");
+        return name + ": " + (on ? "ON" : "OFF");
     }
 
     public void turnOff() {
         this.on = false;
     }
-
-
-
-
 }
