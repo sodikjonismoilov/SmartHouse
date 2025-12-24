@@ -24,6 +24,10 @@ public class Device {
         return name + ": " + (on ? "on" : "off");
     }
 
+    public void turnOff() {
+        this.on = false;
+    }
+
 
 
 

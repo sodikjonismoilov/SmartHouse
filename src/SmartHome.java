@@ -15,7 +15,10 @@ public class SmartHome {
             System.out.println("\n1) Toggle light");
             System.out.println("2) Toggle fan");
             System.out.println("3) Show Status");
+            System.out.println("4) Turn off every device");
             System.out.println("0) Exit");
+            
+
             choice = scanner.nextInt();
 
             switch (choice) {
@@ -30,6 +33,11 @@ public class SmartHome {
                 case 3:
                     System.out.println(light.status());
                     System.out.println(fan.status());
+                    break;
+                case 4:
+                    light.turnOff();
+                    fan.turnOff();
+                    System.out.println("Every device turned off.");
                     break;
                 case 0:
                     System.out.println("Goodbye!");
